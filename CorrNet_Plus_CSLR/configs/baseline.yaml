@@ -1,14 +1,14 @@
 feeder: dataset.dataloader_video.BaseFeeder
 phase: train
-dataset: CSL-Daily #CSL-Daily, phoenix2014-T, phoenix2014, CSL
+dataset: phoenix2014-T #CSL-Daily, phoenix2014-T, phoenix2014, CSL
 # dataset: phoenix14-si5
 num_epoch: 80
 work_dir: ./work_dir/baseline/
-batch_size: 2
+batch_size: 1
 random_seed: 0
 test_batch_size: 2
 num_worker: 10
-device: 0,1
+device: 0
 log_interval: 10000
 eval_interval: 1
 save_interval: 5
