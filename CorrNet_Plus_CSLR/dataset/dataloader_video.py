@@ -24,7 +24,7 @@ sys.path.append("..")
 global kernel_sizes 
 
 class BaseFeeder(data.Dataset):
-    def __init__(self, prefix, gloss_dict, dataset='phoenix2014', drop_ratio=1, num_gloss=-1, mode="train", transform_mode=True,
+    def __init__(self, prefix, gloss_dict, dataset='phoenix2014-T', drop_ratio=1, num_gloss=-1, mode="train", transform_mode=True,
                  datatype="lmdb", frame_interval=1, image_scale=1.0, kernel_size=1, input_size=224):
         self.mode = mode
         self.ng = num_gloss
